@@ -4,9 +4,11 @@ class Fibonacci:
 
     def print_sequence(self):
         a, b = 0, 1
+        ansstr = ''
         for i in range(self.n):
-            print(a)
             a, b = b, a + b
+            ansstr += str(a) + ' '
+        return ansstr
 
 # To use the class, create an object and call the print_sequence method
 fib = Fibonacci(10)
